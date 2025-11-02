@@ -3,90 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <script src="js/form.js"></script>
     <link rel="stylesheet" type="text/css" href="css/form.css">
+
     <title>Cadastro</title>
 </head>
 <body>
+    <div class="pagina-login">
+
     <div class="lista">
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-            </ul>
-        </nav>
+        <a href="index.html"><i class="bi bi-house"></i></a>
     </div>
-    <header>
+
+    <header class="container d-flex align-items-center justify-content-center">
         <div>
             <h1 id="titulo">Formulário de cadastro</h1>
             <p id="subtitulo">Cadastre-se no nosso site!</p>
         </div>
     </header>
 
-    <form action="#" method="post">
-        <fieldset class="grupo">
+    <form onsubmit="return validateForm()" class="p-4 bg-gradient border rounded" action="#" method="post">
+        <div class="container">
+            <fieldset>
+                <div class="form-row">
+                    <div class="form-group">
+                        <div class="campo">
+                            <label for="usuario"><strong>Usuário</strong></label>
+                            <input type="text" class="form-control" maxlength="20" placeholder="máximo de 20 caracteres" name="usuario" id="usuario">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="campo">
+                            <label for="genero"><strong>Gênero</strong></label>
+                            <select class="form-select" id="genero" name="genero">
+                                <option selected value="1">Prefiro não dizer</option>
+                                <option value="2">Masculino</option>
+                                <option value="3">Feminino</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            
             <div class="campo">
-                <label for="usuario"><strong>Usuário</strong></label>
-                <input type="text" maxlength="20" placeholder="máximo de 20 caracteres" name="usuario" id="usuario" required>
+                <label for="email"><strong>Email</strong></label>
+                <input class="form-control" type="email" name="email" id="email" placeholder="exemplo@email.com" required>
             </div>
-
+            
             <div class="campo">
-                <label for="genero"><strong>Gênero</strong></label>
-                <select id="genero" name="genero" required>
-                    <option selected disabled value="">Selecione</option>
-                    <option>Masculino</option>
-                    <option>Feminino</option>
-                    <option>Prefiro não dizer</option>
+                <label for="fav_msc"><strong>Música favorita</strong></label>
+                <input class="form-control" type="text" name="fav_msc" id="fav_msc" placeholder="opcional (é possível amar todas)">
+            </div>
+            
+            <div class="campo">
+                <label for="fav_alb"><strong>Album favorito</strong></label>
+                <select class="form-select" id="fav_alb" name="fav_alb" required>
+                    <option selected disabled value="">Selecione seu album favorito</option>
+                    <option>The Piper at the Gates of Dawn</option>
+                    <option>A Saucerful of Secrets</option>
+                    <option>More</option>
+                    <option>Ummagumma</option>
+                    <option>Atom Heart Mother</option>
+                    <option>Meddle</option>
+                    <option>Obscured by Clouds</option>
+                    <option>The Dark Side of the Moon</option>
+                    <option>Wish You Were Here</option>
+                    <option>Animals</option>
+                    <option>The Wall</option>
+                    <option>The Final Cut</option>
+                    <option>A Momentary Lapse of Reason</option>
+                    <option>The Division Bell</option>
+                    <option>The Endless River</option>
                 </select>
             </div>
-        </fieldset>
-
-        <div class="campo">
-            <label for="email"><strong>Email</strong></label>
-            <input type="email" name="email" id="email" required>
-        </div>
-
-        <div class="campo">
-            <label for="fav_msc"><strong>Música favorita</strong></label>
-            <input type="text" name="fav_msc" id="fav_msc" required>
-        </div>
-
-        <div class="campo">
-            <label for="fav_alb"><strong>Album favorito</strong></label>
-            <select id="fav_alb" name="fav_alb" required>
-                <option selected disabled value="">Selecione seu album favorito</option>
-                <option>The Piper at the Gates of Dawn</option>
-                <option>A Saucerful of Secrets</option>
-                <option>More</option>
-                <option>Ummagumma</option>
-                <option>Atom Heart Mother</option>
-                <option>Meddle</option>
-                <option>Obscured by Clouds</option>
-                <option>The Dark Side of the Moon</option>
-                <option>Wish You Were Here</option>
-                <option>Animals</option>
-                <option>The Wall</option>
-                <option>The Final Cut</option>
-                <option>A Momentary Lapse of Reason</option>
-                <option>The Division Bell</option>
-                <option>The Endless River</option>
-            </select>
-        </div>
-
-        <fieldset class="grupo">
+            
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="mem_band"><strong>Compartilhe conosco sua memória ligada à banda!</strong></label>
+                    <textarea class="form-control" rows="10" style="width: 24em" id="mem_band" name="mem_band"></textarea>
+                </div>
+            </fieldset>
+            
             <div class="campo">
-                <label for="mem_band"><strong>Compartilhe conosco sua memória ligada à banda!</strong></label>
-                <textarea rows="10" style="width: 24em" id="mem_band" name="mem_band"></textarea>
+                <label for="nota_band"><strong>Nota para a banda</strong></label>
+                <input class="form-range" type="range" min="1" max="5" step="1" value="5" id="nota_band" name="nota_band">
             </div>
-        </fieldset>
-        
-        <div class="campo">
-            <label for="nota_band"><strong>Nota para a banda</strong></label>
-            <input type="range" min="1" max="5" value="5" id="nota_band" name="nota_band">
-        </div>
-        
-        <div class="campo">
-            <button class="botao" type="submit">Finalizar</button>
+            
+            <div class="campo">
+                <button class="botao btn btn-primary" type="submit">Finalizar</button>
+            </div>
         </div>
     </form>
 </body>
