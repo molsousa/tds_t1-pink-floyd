@@ -8,29 +8,23 @@ body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1rem;
     color: aliceblue;
+    background-image: url('../assets/images/the_final_cut_wpp.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: cover;
 }
 
-@media(min-width: 456px){
-    .pagina-login{
-        background-image: url('../assets/images/the_final_cut_wpp.png');
-        background-repeat: no-repeat;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        top: 0;
-        overflow: auto;
-        background-size: cover;
-    }
+.botao_home{
+    margin: 10px;
 }
 
-.lista a{
+.bi-house{
     color: aliceblue;
-    text-decoration: none;
     font-size: 150%;
     padding: 16px;
 }
 
-.lista a:hover{
+.bi-house:hover{
     color: violet;
 }
 
@@ -140,7 +134,7 @@ fieldset.grupo .campo{
     background: whitesmoke;
 }
 
-.botao{
+.btn{
     font-size: 1.2rem;
     background: darkorchid;
     border: 0;
@@ -154,7 +148,7 @@ fieldset.grupo .campo{
     align-self: center;
 }
 
-.botao:hover{
+.btn:hover{
     background: purple;
     box-shadow: inset 2px 2px 2px whitesmoke;
     text-shadow: none;
