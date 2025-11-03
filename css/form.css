@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
@@ -15,6 +14,12 @@ body{
     background-size: cover;
 }
 
+a{
+    display: inline-block;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
 .botao_home{
     margin: 10px;
 } 
@@ -22,8 +27,6 @@ body{
 .bi-house{
     color: aliceblue;
     font-size: 150%;
-    margin-left: 50%;
-    margin-right: 50%;
 }
 
 .bi-house:hover{
@@ -60,11 +63,16 @@ form{
 }
 
 form, .bg-gradient{
-    background: rgba(68, 49, 88, 0.644);
+    background: rgba(55, 42, 68, 0.644);
 }
 
 fieldset{
     border: 0;
+}
+
+form .bi{
+    margin-right: 2%;
+    font-size: 105%;
 }
 
 input, select, textarea, button{
@@ -80,11 +88,6 @@ input, select, textarea, button{
 .campo label{
     margin-bottom: 0.2em;
     color:violet;
-}
-
-fieldset.grupo .campo{
-    float: left;
-    margin-right: 1em;
 }
 
 .campo input[type="text"], .campo input[type="email"], .campo select{
@@ -103,21 +106,13 @@ fieldset.grupo .campo{
     width: 165px;
 }
 
-.campo input[type="email"]{
-    width: 365px;
-}
-
-.campo input[name="fav_msc"]{
-    width: 365px;
-}
-
-.campo select[id="fav_alb"]{
+.campo input[id="email"], .campo input[id="fav_msc"], .campo select[id="fav_alb"]{
     width: 365px;
 }
 
 .campo textarea{
     border: 2px solid purple;
-    box-shadow: 1px 1px 1px darkslateblue;
+    box-shadow: 2px 2px 2px darkslateblue;
     height: 150px;
     font-size: 100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -136,7 +131,6 @@ fieldset.grupo .campo{
     font-size: 1.2rem;
     background: darkorchid;
     border: 0;
-    margin-bottom: 1rem;
     color: white;
     padding: 0.2em 0.5em;
     box-shadow: 2px 2px 2px whitesmoke;

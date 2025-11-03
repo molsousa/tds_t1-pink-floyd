@@ -17,77 +17,80 @@
 </head>
 
 <body>
-    <!-- Adição de icone home -->
-    <div class="botao_home">
-        <a href="index.html"><i class="bi bi-house"></i></a>
-    </div>
-
-    <header class="container d-flex align-items-center justify-content-center">
-        <div>
-            <h1 id="titulo">Formulário de Cadastro</h1>
-            <p id="subtitulo">Cadastre-se no nosso site!</p>
+    <!-- classe bootstrap pra remover overflow na horizontal -->
+    <div class="overflow-hidden">
+        <!-- Adição de icone home -->
+        <div class="botao_home">
+            <a href="index.html"><i class="bi bi-house"></i></a>
         </div>
-    </header>
-
-    <!-- Função para validar formulário, classe bootstrap pra deixar borda gradiente, método post (envia info) -->
-    <form onsubmit="return validateForm()" class="p-4 bg-gradient border rounded" action="#" method="post">
-        <div class="container">
-            <!-- Todos os labels estão com a classe form-label do bootstrap -->
-             <!-- Assim como todos os inputs estão com sua classe bootstrap correspondente -->
-            <fieldset>
-                <div class="form-row">
-                    <div class="form-group">
-                        <div class="campo">
-                            <label for="usuario" class="form-label"><strong>Usuário</strong></label>
-                            <input type="text" class="form-control" maxlength="20" placeholder="máximo de 20 caracteres" name="usuario" id="usuario">
+        
+        <header class="container d-flex align-items-center justify-content-center">
+            <div>
+                <h1 id="titulo">Formulário de Cadastro</h1>
+                <p id="subtitulo">Cadastre-se no nosso site!</p>
+            </div>
+        </header>
+        
+        <!-- Função para validar formulário, classe bootstrap pra deixar borda gradiente, método post (envia info) -->
+        <form onsubmit="return validateForm()" class="p-4 bg-gradient border rounded" action="#" method="post">
+            <div class="container">
+                <!-- Todos os labels estão com a classe form-label do bootstrap -->
+                <!-- Assim como todos os inputs e selects estão com sua classe bootstrap correspondente -->
+                <fieldset>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <div class="campo">
+                                <label for="usuario" class="form-label"><strong><i class="bi bi-person"></i>Usuário</strong></label>
+                                <input type="text" class="form-control" maxlength="20" placeholder="máximo de 20 caracteres" name="usuario" id="usuario">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="campo">
+                                <label for="genero" class="form-label"><strong><i class="bi bi-gender-ambiguous"></i>Gênero</strong></label>
+                                <select class="form-select" id="genero" name="genero">
+                                    <option value="1">Masculino</option>
+                                    <option value="2">Feminino</option>
+                                    <option selected value="3">Prefiro não dizer</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <div class="campo">
-                            <label for="genero" class="form-label"><strong>Gênero</strong></label>
-                            <select class="form-select" id="genero" name="genero">
-                                <option value="1">Masculino</option>
-                                <option value="2">Feminino</option>
-                                <option selected value="3">Prefiro não dizer</option>
-                            </select>
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-            
-            <div class="campo">
-                <label for="email" class="form-label"><strong>Email</strong></label>
-                <input class="form-control" type="email" name="email" id="email" placeholder="exemplo@email.com">
-            </div>
-            
-            <div class="campo">
-                <label for="fav_msc" class="form-label"><strong>Música favorita</strong></label>
-                <input class="form-control" type="text" name="fav_msc" id="fav_msc" placeholder="opcional (é possível amar todas)">
-            </div>
-            
-            <!-- Chamada de array no form.js -->
-            <div class="campo">
-                <label for="fav_alb" class="form-label"><strong>Album favorito</strong></label>
-                <select id="fav_alb" class="form-select" name="fav_alb"></select>
-            </div>
-            
-            <fieldset class="grupo">
+                </fieldset>
+                
                 <div class="campo">
-                    <label for="mem_band" class="form-label"><strong>Compartilhe conosco sua memória ligada à banda!</strong></label>
-                    <textarea class="form-control" rows="10" style="width: 24em" id="mem_band" name="mem_band"></textarea>
+                    <label for="email" class="form-label"><strong><i class="bi bi-envelope"></i>Email</strong></label>
+                    <input class="form-control" type="email" name="email" id="email" placeholder="exemplo@email.com">
                 </div>
-            </fieldset>
-            
-            <!-- Adição de evento de mouse -->
-            <div class="campo">
-                <label for="nota_band" class="form-label"><strong>Nota para a banda</strong></label>
-                <input class="form-range" onclick="getValor()" type="range" min="1" max="5" step="1" value="5" id="nota_band" name="nota_band">
+                
+                <div class="campo">
+                    <label for="fav_msc" class="form-label"><strong><i class="bi bi-file-earmark-music"></i></i>Música favorita</strong></label>
+                    <input class="form-control" type="text" name="fav_msc" id="fav_msc" placeholder="opcional (é possível amar todas)">
+                </div>
+                
+                <!-- Chamada de array no form.js -->
+                <div class="campo">
+                    <label for="fav_alb" class="form-label"><strong><i class="bi bi-vinyl"></i>Album favorito</strong></label>
+                    <select class="form-select" id="fav_alb" name="fav_alb"></select>
+                </div>
+                
+                <fieldset class="grupo">
+                    <div class="campo">
+                        <label for="mem_band" class="form-label"><strong><i class="bi bi-device-hdd"></i>Compartilhe sua memória ligada à banda!</strong></label>
+                        <textarea class="form-control" rows="10" style="width: 24em" id="mem_band" name="mem_band"></textarea>
+                    </div>
+                </fieldset>
+                
+                <!-- Adição de evento de mouse -->
+                <div class="campo">
+                    <label for="nota_band" class="form-label"><strong><i class="bi bi-bar-chart"></i>Nota para a banda</strong></label>
+                    <input class="form-range" onclick="getValor()" type="range" min="1" max="5" step="1" value="5" id="nota_band" name="nota_band">
+                </div>
+                
+                <div class="campo">
+                    <button class="btn btn-success" type="submit">Finalizar</button>
+                </div>
             </div>
-            
-            <div class="campo">
-                <button class="btn btn-success" type="submit">Finalizar</button>
-            </div>
-        </div>
-    </form>
+        </form>
+    </div>
 </body>
 </html>
