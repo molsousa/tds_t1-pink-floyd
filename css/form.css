@@ -6,6 +6,7 @@
 
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
     font-size: 1rem;
     color: aliceblue;
     background-image: url('../assets/images/the_final_cut_wpp.png');
@@ -16,12 +17,13 @@ body{
 
 .botao_home{
     margin: 10px;
-}
+} 
 
 .bi-house{
     color: aliceblue;
     font-size: 150%;
-    padding: 16px;
+    margin-left: 50%;
+    margin-right: 50%;
 }
 
 .bi-house:hover{
@@ -37,17 +39,6 @@ p{
     color: azure;
 }
 
-form{
-    margin: 1.5em auto;
-    padding: 2em;
-    max-width: 450px;
-    border-radius: 15px;
-}
-
-form, .bg-gradient{
-    background: rgba(68, 49, 88, 0.644);
-}
-
 #titulo{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: aliceblue;
@@ -59,6 +50,17 @@ form, .bg-gradient{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+form{
+    margin: 1.5em auto;
+    padding: 2em;
+    max-width: 455px;
+    border-radius: 15px;
+}
+
+form, .bg-gradient{
+    background: rgba(68, 49, 88, 0.644);
 }
 
 fieldset{
@@ -91,10 +93,6 @@ fieldset.grupo .campo{
     box-shadow: 2px 2px 2px darkslateblue;
     font-size: 100%;
     width: 175px;
-}
-
-.form-group{
-    box-sizing: border-box;
 }
 
 .campo input[name="usuario"]{
