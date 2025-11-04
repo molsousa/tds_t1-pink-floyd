@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(image/animals.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 900px;
+    height: 900px;
+    
+    background: rgba(255, 255, 255, 0.1); /* cor branca com transparência */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* borda leve e translúcida */
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); /* o efeito de desfoque */
+    -webkit-backdrop-filter: blur(10px); /* compatibilidade com Safari */
+    color: white;
+    text-align: center;
+}
+
+
+
+
