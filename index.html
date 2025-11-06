@@ -11,26 +11,6 @@
 
   <link rel="stylesheet" href="css/index.css">
 
-  <style>
-    html,body {
-      background-image: url('assets/images/tds.PNG');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-attachment: fixed;
-      min-height: 100%;
-    }
-    .album img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.4);
-    }
-    .fundo {
-      background-color: rgba(255, 255, 255, 0.9);
-      border-radius: 10px;
-      padding: 30px;
-    }
-  </style>
 </head>
 
 <body>
@@ -38,10 +18,21 @@
   <div class="container mb-5 fundo">
     <h1>Pink Floyd</h1>
 
-    <p>Pink Floyd foi uma banda britânica de rock, surgida em 1965, que esteve na vanguarda do movimento psicodélico dos anos 1960 e depois ajudou a popularizar o álbum conceitual para o grande público na década de 1970.</p>
-    <p>A banda foi formada em 1965. Eles passaram por alguns nomes antes de adotarem “Pink Floyd”, inspirado nos músicos de blues Pink Anderson e Floyd Council. Sob a liderança de Syd Barrett, o grupo se tornou um marco do underground britânico.</p>
-    <p>Assinaram com a gravadora EMI e, no início de 1967, conseguiram seu primeiro sucesso com “Arnold Layne”. O álbum de estreia foi <em>The Piper at the Gates of Dawn</em>, já reconhecido como clássico do rock.</p>
+    <ul>
+      <li>
+        Pink Floyd foi uma banda britânica de rock, surgida em 1965, que esteve na vanguarda do movimento psicodélico dos anos 1960 e depois ajudou a popularizar o álbum conceitual para o grande público na década de 1970.
+      </li>
     
+      <li>
+        A banda foi formada em 1965. Eles passaram por alguns nomes antes de adotarem “Pink Floyd”, inspirado nos músicos de blues Pink Anderson e Floyd Council. Sob a liderança de Syd Barrett, o grupo se tornou um marco do underground britânico.
+      </li>
+
+      <li>
+        Assinaram com a gravadora EMI e, no início de 1967, conseguiram seu primeiro sucesso com “Arnold Layne”. O álbum de estreia foi <em>The Piper at the Gates of Dawn</em>, já reconhecido como clássico do rock.
+      </li>
+    
+    </ul>
+
     <a href="form.html">
         <button type="button" class="btn btn-danger">
             <i class="bi bi-person-add"></i>
@@ -61,7 +52,9 @@
         </h2>
 
         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-          <div class="accordion-body">O álbum The Dark Side of the Moon (1973) consolidou o sucesso do Pink Floyd com temas profundos sobre morte e desgaste emocional, permanecendo por mais de dez anos nas paradas dos EUA. Já Wish You Were Here (1975) destacou-se com a faixa “Shine On You Crazy Diamond”, uma homenagem a Syd Barrett, alcançando o topo das paradas no Reino Unido e nos EUA.</div>
+          <div class="accordion-body">
+            O álbum The Dark Side of the Moon (1973) consolidou o sucesso do Pink Floyd com temas profundos sobre morte e desgaste emocional, permanecendo por mais de dez anos nas paradas dos EUA. Já Wish You Were Here (1975) destacou-se com a faixa “Shine On You Crazy Diamond”, uma homenagem a Syd Barrett, alcançando o topo das paradas no Reino Unido e nos EUA.
+          </div>
         </div>
 
       </div>
@@ -121,30 +114,43 @@
 
   
     <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+ 
       <div class="col">
-        <div class="album text-center">
-          <p><strong>Atom Heart Mother (1970)</strong></p>
-          <img src="assets/images/Pink-Floyd_Atom-Heart-Mother.jpg" alt="Atom Heart Mother">
-        </div>
-      </div>
-
-      <div class="col">
-        <div class="album text-center">
-          <p><strong>The Dark Side of the Moon (1973)</strong></p>
-          <img src="assets/images/Pink-Floyd_The-Dark-Side-of-the-Moon-50-1.jpg" alt="Dark Side of the Moon">
-        </div>
-      </div>
-
-      <div class="col">
-
-            <div class="album text-center">
-                <a href="animals.html">
-                    <p><strong>Animals (1977)</strong></p>
-                    <img src="assets/images/Pink-Floyd_Animals-orig.jpg" alt="Animals">
-                </a>
+        
+          <div class="card" style="width: 15rem;">
+            <img src="assets/images/Pink-Floyd_The-Dark-Side-of-the-Moon-50-1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">The Dark Side of the Moon (1973)</h5>
+              <a href="tdsMoon.html" class="btn btn-primary">Go somewhere</a>
             </div>
+          </div>
 
       </div>
+
+      <div class="col">
+
+        <div class="card" style="width: 15rem;">
+          <img src="assets/images/Pink-Floyd_Animals-orig.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Animals (1977)</h5>
+            <a href="animals.html" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col">
+
+       <div class="card" style="width: 15rem;">
+          <img src="assets/images/Pink-Floyd_Atom-Heart-Mother.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Atom Heart Mother (1970)</h5>
+            <a href="atomHeart.html" class="btn btn-primary">Go somewhere</a>
+          </div>
+        </div>
+
+      </div>
+
     </div>
   </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>

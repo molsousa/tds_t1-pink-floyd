@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../assets/images/Pink-Floyd_Atom-Heart-Mother.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fundo {
+    width: 900px;
+    height: 950px;
+    
+    background: rgba(255, 255, 255, 0.1); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+    padding: 20px;
+    border-radius: 10px;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    color: white;
+    text-align: center;
+}
+
+
+
+
