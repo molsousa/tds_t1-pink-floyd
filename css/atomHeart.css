@@ -7,7 +7,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-image: url(../assets/images/Pink-Floyd_Atom-Heart-Mother.jpg);
+    background-image: url(../assets/images/Pink-Floyd_Atom-Heart-Mother-fundo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%; 
@@ -30,6 +30,9 @@ body{
     text-align: center;
 }
 
+.img-fluid{
+    width: 42%;
+}
 
 
 
