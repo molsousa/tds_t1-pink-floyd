@@ -7,7 +7,7 @@
 body{
     width: 100%;
     min-height: 100vh;
-    background-image: url(../assets/images/Pink-Floyd_Animals-orig.jpg);
+    background-image: url(../assets/images/Pink-Floyd_Animals-fundo.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%; 
@@ -28,6 +28,10 @@ body{
     -webkit-backdrop-filter: blur(10px); 
     color: white;
     text-align: center;
+}
+
+.img-fluid{
+    width: 42%;
 }
 
 
