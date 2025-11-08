@@ -15,7 +15,6 @@
 
     <title>Cadastro</title>
 </head>
-
 <body>
     <!-- classe bootstrap pra remover overflow na horizontal -->
     <div class="overflow-hidden">
@@ -24,8 +23,10 @@
             <a href="index.html"><i class="bi bi-house"></i></a>
         </div>
         
+        <!-- Cabeçalho inicial com título e subtítulo -->
         <header class="container d-flex align-items-center justify-content-center">
             <div>
+                <!-- Tag 'h1' para título e 'p' para subtítulo -->
                 <h1 id="titulo">Formulário de Cadastro</h1>
                 <p id="subtitulo">Cadastre-se no nosso site!</p>
             </div>
@@ -37,15 +38,18 @@
                 <!-- Todos os labels estão com a classe form-label do bootstrap -->
                 <!-- Assim como todos os inputs e selects estão com sua classe bootstrap correspondente -->
                 <fieldset>
+                    <!-- Agrupar usuário e gênero na mesma linha (no caso, dentro do fieldset, e não literalmente) -->
                     <div class="form-row">
                         <div class="form-group">
                             <div class="campo">
-                                <label for="usuario" class="form-label"><strong><i   class="bi bi-person"></i>Usuário</strong></label>
+                                <!-- Adição de input para usuário -->
+                                <label for="usuario" class="form-label"><strong><i   class="bi bi-person"></i>Usuário*</strong></label>
                                 <input type="text" class="form-control" maxlength="20" placeholder="máximo de 20 caracteres" name="usuario" id="usuario">
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="campo">
+                                <!-- Adição de seleção de itens para gênero -->
                                 <label for="genero" class="form-label"><strong><i class="bi bi-gender-ambiguous"></i>Gênero</strong></label>
                                 <select class="form-select" id="genero" name="genero">
                                     <option value="1">Masculino</option>
@@ -56,12 +60,14 @@
                         </div>
                     </div>
                 </fieldset>
-                
+
+                <!-- Entrada email -->
                 <div class="campo">
-                    <label for="email" class="form-label"><strong><i class="bi bi-envelope"></i>Email</strong></label>
+                    <label for="email" class="form-label"><strong><i class="bi bi-envelope"></i>Email*</strong></label>
                     <input class="form-control" type="email" name="email" id="email" placeholder="exemplo@email.com">
                 </div>
                 
+                <!-- Entrada de texto -->
                 <div class="campo">
                     <label for="fav_msc" class="form-label"><strong><i class="bi bi-file-earmark-music"></i></i>Música favorita</strong></label>
                     <input class="form-control" type="text" name="fav_msc" id="fav_msc" placeholder="opcional (é possível amar todas)">
@@ -69,12 +75,14 @@
                 
                 <!-- Chamada de array no form.js -->
                 <div class="campo">
-                    <label for="fav_alb" class="form-label"><strong><i class="bi bi-vinyl"></i>Album favorito</strong></label>
+                    <!-- Classe para select -->
+                    <label for="fav_alb" class="form-label"><strong><i class="bi bi-vinyl"></i>Album favorito*</strong></label>
                     <select class="form-select" id="fav_alb" name="fav_alb"></select>
                 </div>
                 
                 <fieldset class="grupo">
                     <div class="campo">
+                        <!-- Entrada para textarea -->
                         <label for="mem_band" class="form-label"><strong><i class="bi bi-device-hdd"></i>Compartilhe sua memória ligada à banda!</strong></label>
                         <textarea class="form-control" rows="10" style="width: 24em" id="mem_band" name="mem_band"></textarea>
                     </div>
@@ -82,10 +90,12 @@
                 
                 <!-- Adição de evento de mouse -->
                 <div class="campo">
+                    <!-- Classe para range -->
                     <label for="nota_band" class="form-label"><strong><i class="bi bi-bar-chart"></i>Nota para a banda</strong></label>
                     <input class="form-range" onclick="getValor()" type="range" min="0" max="1" step="0.1" value="1" id="nota_band" name="nota_band">
                 </div>
                 
+                <!-- Botão de confirmação -->
                 <div class="campo">
                     <button class="btn btn-success" type="submit">Finalizar</button>
                 </div>

@@ -1,8 +1,10 @@
+/* margin e padding da página inteira em 0 */
 *{
     margin: 0;
     padding: 0;
 }
 
+/* Utilização de medida em 'rem' e '%' */
 body{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: black;
@@ -14,12 +16,14 @@ body{
     background-size: cover;
 }
 
+/* utilização de inline-block para link, nesse caso, vinculado a um ícone */
 a{
     display: inline-block;
     margin-left: 50%;
     margin-right: 50%;
 }
 
+/* utilização de ícone bootstrap */
 .botao_home{
     margin: 10px;
 } 
@@ -37,11 +41,13 @@ header{
     margin-top: 0;
 }
 
+/* estilização de parágrafo */
 p{
     font-size: 125%;
     color: azure;
 }
 
+/* estilo único */
 #titulo{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: aliceblue;
@@ -119,6 +125,7 @@ input, select, textarea, button{
     resize: none;
 }
 
+/* utilização de medida 'em' */
 .campo select option{
     padding-right: 1em;
 }
@@ -146,6 +153,7 @@ input, select, textarea, button{
     text-shadow: none;
 }
 
+/* utilização de medida em px */
 input[type="range"]{
     appearance: none;
     display: inline-block;

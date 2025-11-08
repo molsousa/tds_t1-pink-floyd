@@ -5,6 +5,7 @@ function validateForm(){
     const fav_alb = document.getElementById("fav_alb").value;
     const nota_banda = document.getElementById("nota_band").value;
 
+    // Alertas de vários casos de não preenchimentos
     if(!nome){
         alert("O campo 'Usuario' é obrigatório!");
         return false;
@@ -25,10 +26,11 @@ function validateForm(){
         return false;
     }
 
+    // retorna verdadeiro se o formulário está com os campos obrigatórios preenchidos
     return true;
 }
 
-// Opções de albuns para 'select'
+// Arrays de itens para álbuns
 const albuns = ["---", "The Piper at the Gates of Dawn", "A Saucerful of Secrets", "More", "Ummagumma",
     "Atom Heart Mother", "Meddle", "Obscured by Clouds", "The Dark Side of the Moon",
     "Wish You Were Here", "Animals", "The Wall", "The Final Cut", "A Momentary Lapse of Reason",
