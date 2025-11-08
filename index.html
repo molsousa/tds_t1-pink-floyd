@@ -16,9 +16,12 @@
 
 <body>
 
+   <!--classe container-->
   <div class="container mb-5 fundo">
+    <!--Tag Minima Titulo-->
     <h1>Pink Floyd</h1>
 
+     <!--Tag Minima topicos e para listar informacoes da banda-->
     <ul>
       <li>
         Pink Floyd foi uma banda britânica de rock, surgida em 1965, que esteve na vanguarda do movimento psicodélico dos anos 1960 e depois ajudou a popularizar o álbum conceitual para o grande público na década de 1970.
@@ -33,55 +36,70 @@
       </li>
     
     </ul>
-
+    <!--Botão vermelho com icone de adicionar pessoa-->
     <a href="form.html">
         <button type="button" class="btn btn-danger">
-            <i class="bi bi-person-add"></i>
+            <i class="bi bi-person-add"></i><!--icone do bootstrap-->
         </button>
     </a>
-
+    <!--Tag Minima Subtitulo adiciona margem superior-->
     <h2 class="mt-5 text-secondary">Curiosidades</h2>
-
+    
+  
+    <!-- Componente acoordion -->
     <div class="accordion accordion-flush" id="accordionFlushExample">
 
+      <!--Primeiro item do acoordion-->
       <div class="accordion-item">
 
         <h2 class="accordion-header">
+
+          <!--Botao que abre e fecha o conteudo-->
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
             The Dark Side of the Moon e Wish You Were Here
           </button>
         </h2>
 
+      
         <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">
+              <!--Conteudo oculto que ao clicar no primeiro item aparece-->
             O álbum The Dark Side of the Moon (1973) consolidou o sucesso do Pink Floyd com temas profundos sobre morte e desgaste emocional, permanecendo por mais de dez anos nas paradas dos EUA. Já Wish You Were Here (1975) destacou-se com a faixa “Shine On You Crazy Diamond”, uma homenagem a Syd Barrett, alcançando o topo das paradas no Reino Unido e nos EUA.
           </div>
         </div>
 
       </div>
-
+      
+      <!--Segundo item do acoordion-->
       <div class="accordion-item">
 
         <h2 class="accordion-header">
+          <!--Botao que abre e fecha o conteudo-->
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
            Engajamento político de Roger Waters
           </button>
         </h2>
 
+       
         <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+           <!--Conteudo oculto que ao clicar no segundo item aparece-->
           <div class="accordion-body">Roger Waters, influenciado por sua formação familiar comunista e pela morte de seu pai na guerra, sempre expressou ideais políticos e de defesa da democracia. Em 2019, ele se manifestou publicamente contra a extradição de Julian Assange, fundador do WikiLeaks, preso em Londres.</div>
         </div>
 
       </div>
 
+      <!--Terceiro item do acoordion-->
       <div class="accordion-item">
 
         <h2 class="accordion-header">
+          <!--Botao que abre e fecha o conteudo-->
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
            Show histórico em Pompeia
           </button>
         </h2>
 
+
+        <!--Conteudo oculto que ao clicar no terceiro item aparece-->
         <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
           <div class="accordion-body">O Pink Floyd realizou um dos shows mais icônicos da história do rock: Live at Pompeii. Gravado em um anfiteatro romano na antiga cidade de Pompeia  destruída pelo vulcão Vesúvio —], o concerto foi feito sem público, marcando um momento artístico único e inovador.</div>
         </div>
@@ -90,9 +108,10 @@
 
     </div>
 
+    <!--Tag Minima Subtitulo para a tabela de principais membros-->
     <h2 class="mt-5 text-secondary">Principais membros da banda</h2>
 
-    
+    <!--faz a tabela se adapta em uma tela menor-->
     <div class="table-responsive mt-3">
       <table class="table table-striped table-bordered">
         <thead class="table-dark">
@@ -102,6 +121,8 @@
           </tr>
         </thead>
         <tbody>
+
+          <!--tabela contendo as informações-->
           <tr><td>Syd Barrett</td><td>Guitarrista e vocalista</td></tr>
           <tr><td>Roger Waters</td><td>Baixista</td></tr>
           <tr><td>Nick Mason</td><td>Baterista</td></tr>
@@ -111,17 +132,24 @@
       </table>
     </div>
 
-    <h2 class="mt-5 text-secondary">Discografia famosa</h2>
+    <!--Tag Minima Subtitulo-->
+    <h2 class="mt-5 text-secondary">Discografia</h2>
 
-  
-    <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
- 
+  <!-- row cria uma linha row-cols-3 mostar 3 colunas g-4 para adicionar espacamento mt para margin top-->
+    <div class="row row-cols-3 row-cols-md-3 g-4 mt-3">
+      
+      <!--Bloco para cards da dicografia-->
+
       <div class="col">
-        
+         <!-- Componente card do bootstrap -->
           <div class="card" style="width: 15rem;">
             <img src="assets/images/Pink-Floyd_The-Dark-Side-of-the-Moon-50-1.jpg" class="card-img-top" alt="...">
             <div class="card-body">
+
+              <!--Tag minima para subtitulo-->
               <h5 class="card-title">The Dark Side of the Moon (1973)</h5>
+
+              <!-- Botao qu eleva para outras paginas contendo mais informações do album-->
               <a href="tdsMoon.html" class="btn btn-primary">Mais informações</a>
             </div>
           </div>

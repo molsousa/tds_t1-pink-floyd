@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+
+
+img {
+    width: 65%;
+    border-radius: 10000px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+
 body{
     width: 100%;
     min-height: 100vh;
@@ -28,6 +37,12 @@ body{
     -webkit-backdrop-filter: blur(10px); 
     color: white;
     text-align: center;
+
+}
+
+.btn-success {
+   background-color:  rgb(255, 145, 0);
+   border: 1px solid orange;
 }
 
 .img-fluid{

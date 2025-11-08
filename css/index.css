@@ -1,10 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
+/* classe para estilizar o fundo da oagina*/
 html,body {
     background-image: url('../assets/images/tds.PNG');
     background-size: cover;
@@ -13,18 +7,8 @@ html,body {
     background-attachment: fixed;
     min-height: 100%;
 }
-.album img {
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
-}
-.fundo {
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 10px;
-    padding: 30px;
-}
 
-
+/*classe para o estilo de imagem de albuns*/
 .fundo {
     width: 750px;
     height: 1800px;
@@ -36,6 +20,8 @@ html,body {
     text-align: center;
 }
 
+
+/*seletor pra titulo principal*/
 h1 {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #e63946;
@@ -45,12 +31,14 @@ h1 {
     text-shadow: 0 0 10px rgba(235, 11, 11, 0.6);
 }
 
+/*seletor pra titulo secundario*/
 h2 {
     border-left: 5px solid #ff4c4c;
     padding-left: 10px;
     color: #e70e0ed6;
 }
 
+/*seletor pra tabela*/
 table {
     background-color: rgba(255, 255, 255, 0.05);
     border-collapse: collapse;
@@ -59,19 +47,14 @@ table {
     margin-right: auto;  
 }
 
+/*seletor de cabecalho e contúdo*/
 th, td {
-    border: 1px solid rgba(225, 17, 17, 0.959);
-    padding: 8px 15px;
-    text-align: left;
+    border: 1000px solid rgba(86, 0, 0, 0.959);
+    text-align: center;
 }
 
-p {
-    font-family: Georgia, serif;
-    font-size: 1.5em;
-    text-shadow: 2px 2px 0px #fdfdfd; 
-    /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.6); */
-}
 
+/*itens da lista*/
 li
 {
  /* Espaço entre os itens da lista */
@@ -80,4 +63,3 @@ li
     text-shadow: 0 0 10px rgba(245, 245, 245, 0.6);
     /*text-shadow: 2px 2px 0px #FF0000;*/
 }
-

@@ -11,10 +11,10 @@ function pauseAudio() {
 
 
 const musica = {
-  titulo: "Pigs",
-  album: "Animals",
-  ano: 1979,
-  duracao: "11:25"
+  titulo: "Brain Damage",
+  album: "The Dark Side of the Moon",
+  ano: 1973,
+  duracao: "3:50"
 };
 
 

@@ -1,15 +1,16 @@
+//function declaration para tocar o audio
 function playAudio() {
     let x= document.getElementById("myAudio");
     x.play();
 }
 
-
+//function declaration para pausar o audio
 function pauseAudio() {
     let x= document.getElementById("myAudio");
     x.pause();
 }
 
-
+// o objeto contendo informações da música
 const musica = {
   titulo: "Pigs",
   album: "Animals",
@@ -17,7 +18,7 @@ const musica = {
   duracao: "11:25"
 };
 
-
+//function declaration para o alerta mostrando as informações da música
 function mostrarMusica() {
   alert(` Música: ${musica.titulo}\nÁlbum: ${musica.album}\nAno: ${musica.ano}\nDuração: ${musica.duracao}`);
 }

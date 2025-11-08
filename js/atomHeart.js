@@ -11,10 +11,10 @@ function pauseAudio() {
 
 
 const musica = {
-  titulo: "Pigs",
-  album: "Animals",
-  ano: 1979,
-  duracao: "11:25"
+  titulo: "Summer '68",
+  album: "Atom Heart Mother",
+  ano: 1970,
+  duracao: "5:27"
 };
 
 
