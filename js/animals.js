@@ -1,13 +1,13 @@
-//function declaration para tocar o audio
+//function declaration para tocar o áudio
 function playAudio() {
-    let x= document.getElementById("myAudio");
-    x.play();
+  let x = document.getElementById("myAudio");
+  x.play();
 }
 
-//function declaration para pausar o audio
+//function declaration para pausar o áudio
 function pauseAudio() {
-    let x= document.getElementById("myAudio");
-    x.pause();
+  let x = document.getElementById("myAudio");
+  x.pause();
 }
 
 // o objeto contendo informações da música

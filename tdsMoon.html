@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Dark Side of the Moon</title>
-    
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
@@ -17,31 +18,43 @@
 
 <body>
     <div class="fundo">
-        <div class="text">  
+        <div class="text">
             <h1 style="color: white;">The Dark Side of the Moon</h1>
         </div>
-        
-        <p style="color: white;">O disco se baseia em ideias exploradas nas gravações e performances anteriores do Pink Floyd, enquanto omite os instrumentais estendidos que caracterizaram o trabalho anterior da banda. O grupo empregou gravação multicanal, loops de fita e sintetizadores analógicos, incluindo experimentação com o EMS VCS 3 e um Synthi A.</p>
-        <p style="color: white;">The Dark Side of the Moon explora temas como conflito, ganância, tempo, morte e doença mental. Trechos de entrevistas com a roadie da banda e outros são apresentados ao lado de citações filosóficas. A capa, que retrata um espectro prismático, foi projetada por Storm Thorgerson em resposta ao pedido do tecladista Richard Wright por um design "simples e ousado" que representasse a iluminação da banda e os temas do álbum. O álbum foi promovido com dois singles: "Money" e "Us and Them".</p>
-        <p style="color: white;">The Dark Side of the Moon recebeu ampla aclamação da crítica e é frequentemente apresentado em listas profissionais dos maiores álbuns de todos os tempos. Trouxe fama internacional ao Pink Floyd, riqueza e aplausos para todos os quatro membros da banda. Um lançamento de sucesso da era do álbum, também impulsionou as vendas de discos em toda a indústria musical durante a década de 1970.</p>
-        
+
+        <p style="color: white;">O disco se baseia em ideias exploradas nas gravações e performances anteriores do Pink
+            Floyd, enquanto omite os instrumentais estendidos que caracterizaram o trabalho anterior da banda. O grupo
+            empregou gravação multicanal, loops de fita e sintetizadores analógicos, incluindo experimentação com o EMS
+            VCS 3 e um Synthi A.</p>
+        <p style="color: white;">The Dark Side of the Moon explora temas como conflito, ganância, tempo, morte e doença
+            mental. Trechos de entrevistas com a roadie da banda e outros são apresentados ao lado de citações
+            filosóficas. A capa, que retrata um espectro prismático, foi projetada por Storm Thorgerson em resposta ao
+            pedido do tecladista Richard Wright por um design "simples e ousado" que representasse a iluminação da banda
+            e os temas do álbum. O álbum foi promovido com dois singles: "Money" e "Us and Them".</p>
+        <p style="color: white;">The Dark Side of the Moon recebeu ampla aclamação da crítica e é frequentemente
+            apresentado em listas profissionais dos maiores álbuns de todos os tempos. Trouxe fama internacional ao Pink
+            Floyd, riqueza e aplausos para todos os quatro membros da banda. Um lançamento de sucesso da era do álbum,
+            também impulsionou as vendas de discos em toda a indústria musical durante a década de 1970.</p>
+
         <div class="center">
-            <img src="assets/images/Pink-Floyd_The-Dark-Side-of-the-Moon-50-1.jpg" class="img-fluid rounded shadow" alt="Álbum The Wall">
+            <img src="assets/images/Pink-Floyd_The-Dark-Side-of-the-Moon-50-1.jpg" class="img-fluid rounded shadow"
+                alt="Álbum The Wall">
         </div>
-         
+
         <div class="text-center my-4">
 
+            <!-- Adição de mídia, áudio -->
             <audio id="myAudio">
                 <source src="assets/Audio/Brain Damage - tDSotM.mp3" type="audio/mpeg">
             </audio>
-            <button  type="button" class="btn btn-success" onclick= "playAudio()">Play</button>
-            <button  type="button" class="btn btn-success" onclick="pauseAudio()">Pause</button>
-
-    
-            <button  type="button" class="btn btn-success" onclick="mostrarMusica()">Detalhes da Música</button>
+            <!-- Eventos javascript para pausar, tocar e mostrar detalhes da música com 'alert' -->
+            <button type="button" class="btn btn-success" onclick="playAudio()">Play</button>
+            <button type="button" class="btn btn-success" onclick="pauseAudio()">Pause</button>
+            <button type="button" class="btn btn-success" onclick="mostrarMusica()">Detalhes da Música</button>
 
         </div>
 
     </div>
 </body>
+
 </html>

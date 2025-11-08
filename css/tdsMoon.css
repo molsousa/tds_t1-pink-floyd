@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,16 +7,16 @@
 img {
     width: 65%;
     border-radius: 10000px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
 }
 
-body{
+body {
     width: 100%;
     min-height: 100vh;
     background-image: url(../assets/images/Pink-Floyd_The-Dark-Side-of-the-Moon-50-1-fundo.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100% 100%; 
+    background-size: 100% 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,21 +25,21 @@ body{
 .fundo {
     width: 900px;
     height: 950px;
-    background: rgba(255, 255, 255, 0.1); 
-    border: 1px solid rgba(255, 255, 255, 0.3); 
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     padding: 20px;
     border-radius: 10px;
-    backdrop-filter: blur(10px); 
-    -webkit-backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     color: white;
     text-align: center;
 }
 
-.img-fluid{
+.img-fluid {
     width: 42%;
 }
 
 .btn-success {
-   background-color:  rgb(95, 95, 255);
-   border: 1px solid rgb(95, 95, 255);
+    background-color: rgb(95, 95, 255);
+    border: 1px solid rgb(95, 95, 255);
 }
